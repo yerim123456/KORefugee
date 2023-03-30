@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Voca.VocaMainActivity">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="542dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundedge_29_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/check_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/All"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="77dp"
+            android:background="@drawable/voca_click_unclick_all"
+            android:button="@null"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/Korea"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="77dp"
+            android:background="@drawable/voca_click_unclick_korea"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/Native"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/voca_click_unclick_native"
+            android:button="@null" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:text="All"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/check_radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/check_radio_group" />
+
+    <TextView
+        android:id="@+id/nativetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="4dp"
+        android:text="English"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/check_radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/check_radio_group" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="81dp"
+        android:text="Korean"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/nativetext"
+        app:layout_constraintTop_toBottomOf="@+id/check_radio_group" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/voca_pager"
+        android:layout_width="match_parent"
+        android:layout_height="333dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/star_click_unclick"
+        app:layout_constraintEnd_toEndOf="@+id/voca_pager"
+        app:layout_constraintTop_toTopOf="@+id/voca_pager" />
+
+    <ImageButton
+        android:id="@+id/prev"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/step_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voca_pager" />
+
+    <ImageButton
+        android:id="@+id/sound"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/sound"
+        app:layout_constraintBottom_toBottomOf="@+id/next"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintStart_toEndOf="@+id/prev"
+        app:layout_constraintTop_toTopOf="@+id/prev" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="86dp"
+        android:background="@drawable/step_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voca_pager" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Russia"
+        android:enabled="true"
+        android:title="Russia"/>
+    <item
+        android:id="@+id/Qazaqstan"
+        android:enabled="true"
+        android:title="Qazaqstan"/>
+    <item
+        android:id="@+id/Egypt"
+        android:enabled="true"
+        android:title="Egypt"/>
+    <item
+        android:id="@+id/Malaysia"
+        android:enabled="true"
+        android:title="Malaysia" />
+    <item
+        android:id="@+id/India"
+        android:enabled="true"
+        android:title="India" />
+    <item
+        android:id="@+id/China"
+        android:enabled="true"
+        android:title="China" />
+    <item
+        android:id="@+id/Nepal"
+        android:enabled="true"
+        android:title="Nepal" />
+    <item
+        android:id="@+id/Bangladesh"
+        android:enabled="true"
+        android:title="Bangladesh" />
+    <item
+        android:id="@+id/RepublicofTürkiye"
+        android:enabled="true"
+        android:title="Republic of Türkiye" />
+    <item
+        android:id="@+id/Pakistan"
+        android:enabled="true"
+        android:title="Pakistan" />
+    <item
+        android:id="@+id/Korea"
+        android:enabled="true"
+        android:title="Korea" />
+    <item
+        android:id="@+id/Other"
+        android:enabled="true"
+        android:title="Other" />
+</menu>

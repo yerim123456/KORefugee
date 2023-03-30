@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.SignUp03_01Activity">
+    <TextView
+        android:id="@+id/siginup2guidetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Complete your profile"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#F59D00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="42dp"
+        android:text="Where are you from?"
+        android:textColor="#3D3D3D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siginup2guidetextView" />
+
+    <TextView
+        android:id="@+id/countryTextView2"
+        android:layout_width="380dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/write_click_unclick"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="22dp"
+        android:textColor="#3D3D3D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryTextView" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="11dp"
+        android:translationZ="3dp"
+        android:background="@drawable/slide"
+        app:layout_constraintBottom_toBottomOf="@+id/countryTextView2"
+        app:layout_constraintEnd_toEndOf="@+id/countryTextView2"
+        app:layout_constraintTop_toTopOf="@+id/countryTextView2" />
+
+    <TextView
+        android:id="@+id/languageyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="What language do you use?"
+        android:textColor="#3D3D3D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryTextView2" />
+
+    <TextView
+        android:id="@+id/languageTextView2"
+        android:layout_width="380dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/write_click_unclick"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="22dp"
+        android:textColor="#3D3D3D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/languageyTextView" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="11dp"
+        android:translationZ="3dp"
+        android:background="@drawable/slide"
+        app:layout_constraintBottom_toBottomOf="@+id/languageTextView2"
+        app:layout_constraintEnd_toEndOf="@+id/languageTextView2"
+        app:layout_constraintTop_toTopOf="@+id/languageTextView2" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/completeButton"
+        android:layout_width="157dp"
+        android:layout_height="47dp"
+        android:background="@drawable/roundedge_8_orange"
+        android:layout_marginTop="250dp"
+        android:text="Complete"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryTextView2" />
+
+    <TextView
+        android:id="@+id/warnningTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="By signing up, you agree to our Terms of Service and Privacy Policy"
+        android:textColor="#616161"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completeButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

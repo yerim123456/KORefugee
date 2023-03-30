@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imgSize">198dp</dimen>
+    <dimen name="imgSize2_w">411dp</dimen>
+    <dimen name="imgSize2_h">395dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

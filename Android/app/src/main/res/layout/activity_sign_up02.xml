@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+    <TextView
+        android:id="@+id/loginguidetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="What position do you want?"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#F59D00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/refugeeapplicantButton"
+        android:layout_width="379dp"
+        android:layout_height="103dp"
+        android:background="@drawable/position_applicant"
+        android:layout_marginTop="30dp"
+        android:elevation="2dp"
+        android:textAllCaps="false"
+        android:textColor="#696969"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginguidetextView" />
+
+    <ImageButton
+        android:id="@+id/humanitarianstatusButton"
+        android:layout_width="379dp"
+        android:layout_height="103dp"
+        android:background="@drawable/position_humanitarian"
+        android:layout_marginTop="32dp"
+        android:elevation="2dp"
+        android:textAllCaps="false"
+        android:textColor="#696969"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refugeeapplicantButton" />
+    <ImageButton
+        android:id="@+id/refugeeButton"
+        android:layout_width="379dp"
+        android:layout_height="103dp"
+        android:background="@drawable/position_refugee"
+        android:layout_marginTop="32dp"
+        android:elevation="2dp"
+        android:textAllCaps="false"
+        android:textColor="#696969"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humanitarianstatusButton" />
+    <ImageButton
+        android:id="@+id/KoreanButton"
+        android:layout_width="379dp"
+        android:layout_height="103dp"
+        android:background="@drawable/position_korean"
+        android:layout_marginTop="32dp"
+        android:elevation="2dp"
+        android:textAllCaps="false"
+        android:textColor="#696969"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refugeeButton" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addexplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/plus"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

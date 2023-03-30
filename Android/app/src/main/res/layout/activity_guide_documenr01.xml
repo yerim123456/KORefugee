@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guide.GuideFragment">
+
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="status"
+        android:textColor="#F59D00"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What are you preparing?"
+        android:textColor="#3D3D3D"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status" />
+
+
+    <ImageButton
+        android:id="@+id/button1_immgration"
+        android:layout_width="379dp"
+        android:layout_height="86dp"
+        android:elevation="0dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/roundedge_16_orangeline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <ImageView
+        android:id="@+id/plane"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="43dp"
+        android:elevation="2dp"
+        android:background="@drawable/plane"
+        app:layout_constraintBottom_toBottomOf="@+id/button1_immgration"
+        app:layout_constraintStart_toStartOf="@+id/button1_immgration"
+        app:layout_constraintTop_toTopOf="@+id/button1_immgration" />
+
+    <TextView
+        android:id="@+id/button1_title"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Immigration Port Refugee Application"
+        android:textColor="#3D3D3D"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button1_immgration"
+        app:layout_constraintStart_toEndOf="@+id/plane"
+        app:layout_constraintTop_toTopOf="@+id/button1_immgration" />
+
+    <ImageView
+        android:id="@+id/goButton"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/gonext"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button1_immgration"
+        app:layout_constraintEnd_toEndOf="@+id/button1_immgration"
+        app:layout_constraintTop_toTopOf="@+id/button1_immgration" />
+
+    <ImageButton
+        android:id="@+id/button2_stay"
+        android:layout_width="379dp"
+        android:layout_height="86dp"
+        android:elevation="0dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundedge_16_orangeline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1_immgration" />
+
+    <ImageView
+        android:id="@+id/house1"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="43dp"
+        android:elevation="2dp"
+        android:background="@drawable/house1"
+        app:layout_constraintBottom_toBottomOf="@+id/button2_stay"
+        app:layout_constraintStart_toStartOf="@+id/button2_stay"
+        app:layout_constraintTop_toTopOf="@+id/button2_stay" />
+
+    <TextView
+        android:id="@+id/button2_title"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Refugee application during stay"
+        android:textColor="#3D3D3D"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2_stay"
+        app:layout_constraintStart_toEndOf="@+id/house1"
+        app:layout_constraintTop_toTopOf="@+id/button2_stay" />
+
+    <ImageView
+        android:id="@+id/goButton2"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/gonext"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2_stay"
+        app:layout_constraintEnd_toEndOf="@+id/button2_stay"
+        app:layout_constraintTop_toTopOf="@+id/button2_stay" />
+
+    <ImageButton
+        android:id="@+id/button3_objection"
+        android:layout_width="379dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="25dp"
+        android:elevation="0dp"
+        android:background="@drawable/roundedge_16_orangeline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2_stay" />
+
+    <ImageView
+        android:id="@+id/glasses"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="43dp"
+        android:elevation="2dp"
+        android:background="@drawable/glasses"
+        app:layout_constraintBottom_toBottomOf="@+id/button3_objection"
+        app:layout_constraintStart_toStartOf="@+id/button3_objection"
+        app:layout_constraintTop_toTopOf="@+id/button3_objection" />
+
+    <TextView
+        android:id="@+id/button3_title"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="The Refugee Appeal Process"
+        android:textColor="#3D3D3D"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button3_objection"
+        app:layout_constraintStart_toEndOf="@+id/glasses"
+        app:layout_constraintTop_toTopOf="@+id/button3_objection" />
+
+    <ImageView
+        android:id="@+id/goButton3"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/gonext"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button3_objection"
+        app:layout_constraintEnd_toEndOf="@+id/button3_objection"
+        app:layout_constraintTop_toTopOf="@+id/button3_objection" />
+
+    <ImageButton
+        android:id="@+id/button4_more"
+        android:layout_width="379dp"
+        android:layout_height="86dp"
+        android:elevation="0dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundedge_16_orangeline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3_objection" />
+
+    <ImageView
+        android:id="@+id/paper"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="43dp"
+        android:elevation="2dp"
+        android:background="@drawable/paper"
+        app:layout_constraintBottom_toBottomOf="@+id/button4_more"
+        app:layout_constraintStart_toStartOf="@+id/button4_more"
+        app:layout_constraintTop_toTopOf="@+id/button4_more" />
+
+    <TextView
+        android:id="@+id/button4_title"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="More paper"
+        android:textColor="#3D3D3D"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button4_more"
+        app:layout_constraintStart_toEndOf="@+id/paper"
+        app:layout_constraintTop_toTopOf="@+id/button4_more" />
+
+    <ImageView
+        android:id="@+id/goButton4"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/gonext"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button4_more"
+        app:layout_constraintEnd_toEndOf="@+id/button4_more"
+        app:layout_constraintTop_toTopOf="@+id/button4_more" />
+</androidx.constraintlayout.widget.ConstraintLayout>
